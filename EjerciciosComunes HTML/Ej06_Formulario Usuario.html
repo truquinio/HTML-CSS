@@ -1,0 +1,84 @@
+<!-- Por último, vamos a crear un formulario para registrar un usuario que se vea de la 
+siguiente manera:
+Es importante que en las casillas de sexo del usuario se puede clickear la/s palabra/s 
+hombre, mujer o prefiero no decir para seleccionar la opción. Recordemos que eso lo 
+podemos hacer con la etiqueta label. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <form action="/controlador-registro" method="post" class="form-registro" enctype="multipart/form-data">
+            <!-- <form name="input" action="index.php" method="post" onsubmit="return verificaRadios(this)"> -->
+                <div>
+                    <span><strong>Nombre del usuario:</strong></span>
+                    <br>
+                    <label for="nombre"></label>                    
+                    <input name="nombre" type="text" required/>
+                </div>
+                <div>
+                    <p>
+                    <span><strong>Contraseña del usuario:</strong></span>
+                    <br>
+                    <label for="contrasenia"></label>
+                    <input name="contrasenia" type="password" required/>
+                    </p>
+                </div>
+                <div>
+                    <span><strong>Edad del usuario:</strong></span>
+                    <br>
+                    <label for="number"></label>
+                    <input name="number" type="number" required/>
+                </div>
+                <br>
+                <div>
+                    <span><strong>Fecha de nacimiento del usuario:</strong></span>
+                    <br>
+                    <label for="date"></label>
+                    <input name="date" type="date"/>
+                </div>
+                <div>
+                    <p>
+                        <strong>Sexo del usuario:</strong>
+                        <br>
+                        <input name="sexo-usuario" type="radio" value="f"/><label for="hombre">Hombre</label>
+                        <br>
+                        <input name="sexo-usuario" type="radio" value="f"/><label for="mujer">Mujer</label>
+                        <br>
+                        <input name="sexo-usuario" type="radio" value="f"/><label for="nodecir">Prefiero no decir</label>
+                        <!--
+                        //  OTRA FORMA:
+                        <input type="radio" name="sexo-usuario" value="hombre">Hombre<br>
+                        <input type="radio" name="sexo-usuario" value="mujer">Mujer<br>
+                        <input type="radio" name="sexo-usuario" value="nodecir">Prefiero no decir 
+                    -->
+                    </p>
+                </div>
+                <div>
+                    <p>
+                    <label for="pais"><strong>País de nacimiento del usuario: </strong></label>
+                    <br>
+                    <select name="pais">
+                        <option value="arg">Argentina</option>
+                        <option value="bra">Brasil</option>
+                        <option value="chi">Chile</option>
+                        <option value="col">Colombia</option>
+                        <option value="otr">Otro</option>
+                    </select>
+                </p>
+            </div>
+            <div>
+                <button type="submit">Enviar</button><button type="submit">Borrar</button>
+            </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
