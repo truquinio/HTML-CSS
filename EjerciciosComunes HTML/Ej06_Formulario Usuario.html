@@ -20,6 +20,7 @@ podemos hacer con la etiqueta label. -->
                 <div>
                     <span><strong>Nombre del usuario:</strong></span>
                     <br>
+                    <!-- type text = Permite rellenar el campo contenedor con texto -->
                     <label for="nombre"></label>                    
                     <input name="nombre" type="text" required/>
                 </div>
@@ -27,6 +28,7 @@ podemos hacer con la etiqueta label. -->
                     <p>
                     <span><strong>Contraseña del usuario:</strong></span>
                     <br>
+                    <!-- type password = Permite rellenar el campo contenedor con una contraseña -->
                     <label for="contrasenia"></label>
                     <input name="contrasenia" type="password" required/>
                     </p>
@@ -34,6 +36,7 @@ podemos hacer con la etiqueta label. -->
                 <div>
                     <span><strong>Edad del usuario:</strong></span>
                     <br>
+                    <!-- type number = Permite rellenar el campo contenedor con números -->
                     <label for="number"></label>
                     <input name="number" type="number" required/>
                 </div>
@@ -41,6 +44,7 @@ podemos hacer con la etiqueta label. -->
                 <div>
                     <span><strong>Fecha de nacimiento del usuario:</strong></span>
                     <br>
+                    <!-- type date = Agrega un calendario al formulario -->
                     <label for="date"></label>
                     <input name="date" type="date"/>
                 </div>
@@ -48,11 +52,14 @@ podemos hacer con la etiqueta label. -->
                     <p>
                         <strong>Sexo del usuario:</strong>
                         <br>
+                        <!-- Para que de la opción de elegir una sóla opción, se debe poner el mismo "name" en todos los input -->
                         <input name="sexo-usuario" type="radio" value="f"/><label for="hombre">Hombre</label>
                         <br>
                         <input name="sexo-usuario" type="radio" value="f"/><label for="mujer">Mujer</label>
                         <br>
                         <input name="sexo-usuario" type="radio" value="f"/><label for="nodecir">Prefiero no decir</label>
+                        <!-- radio = sirve para hacer múltiples opciones con círculos -->
+
                         <!--
                         //  OTRA FORMA:
                         <input type="radio" name="sexo-usuario" value="hombre">Hombre<br>
@@ -65,6 +72,7 @@ podemos hacer con la etiqueta label. -->
                     <p>
                     <label for="pais"><strong>País de nacimiento del usuario: </strong></label>
                     <br>
+                    <!-- select = Hace que las opciones sean como menú desplegable -->
                     <select name="pais">
                         <option value="arg">Argentina</option>
                         <option value="bra">Brasil</option>
@@ -75,6 +83,7 @@ podemos hacer con la etiqueta label. -->
                 </p>
             </div>
             <div>
+                <!-- button type submit = Crea un botón para enviar una órden -->
                 <button type="submit">Enviar</button><button type="submit">Borrar</button>
             </div>
             </form>
