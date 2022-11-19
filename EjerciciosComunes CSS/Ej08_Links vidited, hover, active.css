@@ -8,17 +8,20 @@ y la letra de color blanco	#FFF.
 /* link sin visitar */
 a {
     color: #CC0000;
-    }
-    /* mouse sobre el link*/
-    a:hover {
+}
+
+/* mouse sobre el link*/
+a:hover {
     background-color: #CC0000;
     color: #FFF;
-    }
-    /* link visitado*/
-    a:visited {
+}
+
+/* link visitado*/
+a:visited {
     color: #CCC;
-    }
-    /* link clickeado */
-    a:active {
+}
+
+/* link clickeado */
+a:active {
     color: blue;
-    }
+}
