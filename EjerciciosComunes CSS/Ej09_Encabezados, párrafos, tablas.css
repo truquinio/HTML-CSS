@@ -1,0 +1,76 @@
+/* A partir del siguiente código	HTML	proporcionado, añadir las reglas	CSS	necesarias para 
+que la página resultante tenga el mismo aspecto que el de la siguiente imagen:  */
+
+body{
+    color: black;
+}
+
+/*PÁRRAFO 1*/
+#titulo{
+    color: rgb(0, 78, 113);
+}
+
+strong{
+    color:  red;
+}
+
+span.destacado{
+    color: rgb(255, 187, 0);
+}
+
+/*PÁRRAFO 2*/
+#subtitulo{
+    color: blue;
+}
+
+a{
+    color: red;
+}
+
+em{
+    color: blue;
+}
+
+span.especial{
+    color: rgb(183, 0, 255);
+}
+
+/*TABLA*/
+table, th, td {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+th.especial{
+    color: rgb(255, 187, 0);
+}
+
+td{
+    color: green;
+}
+
+td.strong{
+    color: rgb(255, 187, 0);
+}
+
+tfoot{
+    color: rgb(255, 0, 0);
+}
+
+th{
+    color: rgb(255, 0, 0);
+}
+
+/*PÁRRAFO 3*/
+#adicional{
+    color: rgb(96, 141, 0);
+}
+
+#especial{
+    color: rgb(183, 0, 255);
+}
+
+#adicional{
+    color: rgb(0, 122, 53);
+}
