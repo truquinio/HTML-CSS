@@ -1,0 +1,66 @@
+<!-- Actividad: Presentación Personal – Parte 2
+¡Pongamos en práctica lo aprendido sobre listas!
+Para ello emplearemos la actividad realizada anteriormente llamada “Presentación Personal –
+Parte 1”.
+1) Agrega un encabezado de menor relevancia que el usado en la actividad anterior
+(Presentación Personal – Parte 1) y nómbralo “Aptitudes Personales”.
+2) Implementar listas desordenadas. Luego crea una lista y agrega tus principales aptitudes
+(por ejemplo: asertividad, trabajo en equipo, escucha activa, entre otros).
+3) Debajo agrega un nuevo encabezado (igual relevancia que en el punto 1) nombrado
+“Tecnologías”
+4) Implementar listas ordenadas. Debajo del encabezado enumera las tecnologías que
+conoces y has aprendido en este curso. (Java, MySQL, HTML entre otras). -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Truquinio</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex lectus, bibendum ut turpis id, 
+        sagittis molestie velit. Vestibulum rutrum vel erat in suscipit. In sed dui sit amet enim condimentum 
+        suscipit ut quis odio. Nullam ut magna nibh. Vivamus ac tortor pellentesque, fringilla mauris nec, 
+        vehicula velit. Duis porttitor orci at lorem vestibulum, quis ornare enim convallis.
+        <br>
+        <strong>Fusce eget turpis in massa vestibulum efficitur. Vestibulum augue lectus, fermentum vel auctor at, 
+        imperdiet sit amet velit.</strong>
+        <br>
+        <br>
+        Nulla ut tempor enim. Etiam facilisis quam vitae suscipit eleifend.
+    </p>
+    <h2>Aptitudes Personales:</h2>
+    <p>
+        <ul>    <!-- ul = Listas desordenadas • ○ -->
+            <li>Asertividad</li>
+            <li>Trabajo en equipo</li>
+            <li>Escucha activa</li>
+            <li>Cooperación</li>
+        </ul>
+    </p>
+    <h2>Tecnologías:</h2>
+    <p>
+        <ol>    <!-- ol = Listas ordenadas 1,2,3,4... -->
+            <li>PSeint</li>
+            <li>Java:</li>
+                <ol type="a">   <!-- type = Define el tipo de viñeta de la lista a,b,c,d... -->
+                    <li>Intro</li>
+                    <li>POO</li>
+                    <li>Colecciones</li>
+                    <li>Relaciones</li>
+                    <li>Herencia</li>
+                    <li>Excepciones</li>
+                    <li>JDBC</li>
+                    <li>JPA</li>
+                </ol>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+        </ol>
+    </p>
+</body>
+</html>
