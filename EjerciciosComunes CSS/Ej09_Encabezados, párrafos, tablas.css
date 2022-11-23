@@ -1,17 +1,13 @@
 /* A partir del siguiente código	HTML	proporcionado, añadir las reglas	CSS	necesarias para 
 que la página resultante tenga el mismo aspecto que el de la siguiente imagen:  */
 
-body{
-    color: black;
-}
-
 /*PÁRRAFO 1*/
 #titulo{
     color: rgb(0, 78, 113);
 }
 
-strong{
-    color:  red;
+strong:first-child{
+    color: red;
 }
 
 span.destacado{
@@ -27,12 +23,16 @@ a{
     color: red;
 }
 
+a:first-child{
+    color: red;
+}
+
 em{
     color: blue;
 }
 
 span.especial{
-    color: rgb(183, 0, 255);
+    color: rgb(111, 0, 255);
 }
 
 /*TABLA*/
@@ -48,6 +48,10 @@ th.especial{
 
 td{
     color: green;
+}
+
+strong:last-child{
+    color: rgb(255, 187, 0);;
 }
 
 td.strong{
@@ -68,9 +72,13 @@ th{
 }
 
 #especial{
-    color: rgb(183, 0, 255);
+    color: rgb(255, 0, 251);
+}
+
+a:last-child{
+    color:green;
 }
 
 #adicional{
-    color: rgb(0, 122, 53);
+    color: rgb(110, 122, 0);
 }

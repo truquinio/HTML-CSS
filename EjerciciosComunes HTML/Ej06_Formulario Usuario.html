@@ -11,53 +11,56 @@ podemos hacer con la etiqueta label. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
     <section>
         <div>
             <form action="/controlador-registro" method="post" class="form-registro" enctype="multipart/form-data">
             <!-- <form name="input" action="index.php" method="post" onsubmit="return verificaRadios(this)"> -->
-                <div>
-                    <span><strong>Nombre del usuario:</strong></span>
-                    <br>
+                <div id="nombreUsuario">
                     <!-- type text = Permite rellenar el campo contenedor con texto -->
-                    <label for="nombre"></label>                    
+                    <label><b>Nombre del usuario:</b><br>
                     <input name="nombre" type="text" required/>
+                    </label>
+                    <!-- required = Hace que el dato a llenar sera obligartorio -->
                 </div>
                 <div>
                     <p>
-                    <span><strong>Contraseña del usuario:</strong></span>
-                    <br>
                     <!-- type password = Permite rellenar el campo contenedor con una contraseña -->
-                    <label for="contrasenia"></label>
+                    <label><b>Contraseña del usuario:</b><br>
                     <input name="contrasenia" type="password" required/>
+                    
+                    </label>
+                    
+                    <!-- required = Hace que el dato a llenar sera obligartorio -->
                     </p>
                 </div>
                 <div>
-                    <span><strong>Edad del usuario:</strong></span>
+                    <span><b>Edad del usuario:</b></span>
                     <br>
                     <!-- type number = Permite rellenar el campo contenedor con números -->
-                    <label for="number"></label>
-                    <input name="number" type="number" required/>
+                    <label for="number"><input name="number" type="number" required/></label>
+                    
                 </div>
                 <br>
                 <div>
-                    <span><strong>Fecha de nacimiento del usuario:</strong></span>
+                    <span class="fecha"><b>Fecha de nacimiento del usuario:</b></span>
                     <br>
                     <!-- type date = Agrega un calendario al formulario -->
-                    <label for="date"></label>
-                    <input name="date" type="date"/>
+                    <label for="date"><input name="date" type="date"/></label>
+                    
                 </div>
                 <div>
                     <p>
-                        <strong>Sexo del usuario:</strong>
+                        <b>Sexo del usuario:</b>
                         <br>
                         <!-- Para que de la opción de elegir una sóla opción, se debe poner el mismo "name" en todos los input -->
-                        <input name="sexo-usuario" type="radio" value="f"/><label for="hombre">Hombre</label>
+                        <label for="masculino"><input id="masculino" name="sexo-usuario" type="radio" value="h"/>Hombre</label>
                         <br>
-                        <input name="sexo-usuario" type="radio" value="f"/><label for="mujer">Mujer</label>
+                        <label for="femenino"><input id="femenino" name="sexo-usuario" type="radio" value="m"/>Mujer</label>
                         <br>
-                        <input name="sexo-usuario" type="radio" value="f"/><label for="nodecir">Prefiero no decir</label>
+                        <label for="nodecir"><input id="nodecir" name="sexo-usuario" type="radio" value="n"/>Prefiero no decir</label>
                         <!-- radio = sirve para hacer múltiples opciones con círculos -->
 
                         <!--
@@ -70,7 +73,7 @@ podemos hacer con la etiqueta label. -->
                 </div>
                 <div>
                     <p>
-                    <label for="pais"><strong>País de nacimiento del usuario: </strong></label>
+                    <label for="pais"><b>País de nacimiento del usuario: </b></label>
                     <br>
                     <!-- select = Hace que las opciones sean como menú desplegable -->
                     <select name="pais">
@@ -84,8 +87,9 @@ podemos hacer con la etiqueta label. -->
             </div>
             <div>
                 <!-- button type submit = Crea un botón para enviar una órden -->
-                <button type="submit">Enviar</button><button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>&nbsp;&nbsp;<button type="reset">Borrar</button>
                 <!-- button type reset = Crea un botón para borrar lo cargado -->
+                <!-- &nbsp = Tabulación/espaciado entre elementos -->
             </div>
             </form>
         </div>

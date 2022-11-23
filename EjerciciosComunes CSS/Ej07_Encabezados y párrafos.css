@@ -28,3 +28,7 @@ p{
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
 }
+
+span{
+    font-weight: bold;
+}

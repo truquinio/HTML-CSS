@@ -6,14 +6,8 @@ y la letra de color blanco	#FFF.
 •  Los enlaces visitados se muestran en color gris claro	#CCC. */
 
 /* link sin visitar */
-a {
-    color: #CC0000;
-}
-
-/* mouse sobre el link*/
-a:hover {
-    background-color: #CC0000;
-    color: #FFF;
+a:link{
+    color:#CC0000;
 }
 
 /* link visitado*/
@@ -24,4 +18,10 @@ a:visited {
 /* link clickeado */
 a:active {
     color: blue;
+}
+
+/* mouse sobre el link*/
+a:hover {
+    background-color: #CC0000;
+    color: #FFF;
 }
