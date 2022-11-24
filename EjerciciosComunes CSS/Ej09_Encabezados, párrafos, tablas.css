@@ -6,6 +6,7 @@ que la página resultante tenga el mismo aspecto que el de la siguiente imagen: 
     color: rgb(0, 78, 113);
 }
 
+/*first-child = Toma el primero de su tipo*/
 strong:first-child{
     color: red;
 }
@@ -23,6 +24,7 @@ a{
     color: red;
 }
 
+/*first-child = Toma el primero de su tipo*/
 a:first-child{
     color: red;
 }
@@ -50,6 +52,7 @@ td{
     color: green;
 }
 
+/*last-child = Toma el último de su tipo*/
 strong:last-child{
     color: rgb(255, 187, 0);;
 }
@@ -75,6 +78,7 @@ th{
     color: rgb(255, 0, 251);
 }
 
+/*last-child = Toma el último de su tipo*/
 a:last-child{
     color:green;
 }

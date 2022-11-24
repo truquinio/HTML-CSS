@@ -1,0 +1,8 @@
+/*Un formulario para que el usuario se pueda registrar en nuestra página usando Bootstrap.*/
+
+.card{
+    width: 20rem;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(115, 255, 0, 0.242);
+}
