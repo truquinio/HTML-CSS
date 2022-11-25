@@ -6,93 +6,96 @@ podemos hacer con la etiqueta label. -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
 </head>
-<body>
-    <section>
-        <div>
-            <form action="/controlador-registro" method="post" class="form-registro" enctype="multipart/form-data">
-            <!-- <form name="input" action="index.php" method="post" onsubmit="return verificaRadios(this)"> -->
-                <div id="nombreUsuario">
-                    <!-- type text = Permite rellenar el campo contenedor con texto -->
-                    <label><b>Nombre del usuario:</b><br>
-                    <input name="nombre" type="text" required/>
-                    </label>
-                    <!-- required = Hace que el dato a llenar sera obligartorio -->
-                </div>
-                <div>
-                    <p>
-                    <!-- type password = Permite rellenar el campo contenedor con una contraseña -->
-                    <label><b>Contraseña del usuario:</b><br>
-                    <input name="contrasenia" type="password" required/>
-                    
-                    </label>
-                    
-                    <!-- required = Hace que el dato a llenar sera obligartorio -->
-                    </p>
-                </div>
-                <div>
-                    <span><b>Edad del usuario:</b></span>
-                    <br>
-                    <!-- type number = Permite rellenar el campo contenedor con números -->
-                    <label for="number"><input name="number" type="number" required/></label>
-                    
-                </div>
-                <br>
-                <div>
-                    <span class="fecha"><b>Fecha de nacimiento del usuario:</b></span>
-                    <br>
-                    <!-- type date = Agrega un calendario al formulario -->
-                    <label for="date"><input name="date" type="date"/></label>
-                    
-                </div>
-                <div>
-                    <p>
-                        <b>Sexo del usuario:</b>
-                        <br>
-                        <!-- Para que de la opción de elegir una sóla opción, se debe poner el mismo "name" en todos los input -->
-                        <label for="masculino"><input id="masculino" name="sexo-usuario" type="radio" value="h"/>Hombre</label>
-                        <br>
-                        <label for="femenino"><input id="femenino" name="sexo-usuario" type="radio" value="m"/>Mujer</label>
-                        <br>
-                        <label for="nodecir"><input id="nodecir" name="sexo-usuario" type="radio" value="n"/>Prefiero no decir</label>
-                        <!-- radio = sirve para hacer múltiples opciones con círculos -->
 
-                        <!--
+<body>
+  <section>
+    <div>
+      <form action="/controlador-registro" method="post" class="form-registro" enctype="multipart/form-data">
+        <!-- <form name="input" action="index.php" method="post" onsubmit="return verificaRadios(this)"> -->
+        <div id="nombreUsuario">
+          <!-- type text = Permite rellenar el campo contenedor con texto -->
+          <label><b>Nombre del usuario:</b><br>
+            <input name="nombre" type="text" required />
+          </label>
+          <!-- required = Hace que el dato a llenar sera obligartorio -->
+        </div>
+        <div>
+          <p>
+            <!-- type password = Permite rellenar el campo contenedor con una contraseña -->
+            <label><b>Contraseña del usuario:</b><br>
+              <input name="contrasenia" type="password" required />
+
+            </label>
+
+            <!-- required = Hace que el dato a llenar sera obligartorio -->
+          </p>
+        </div>
+        <div>
+          <span><b>Edad del usuario:</b></span>
+          <br>
+          <!-- type number = Permite rellenar el campo contenedor con números -->
+          <label for="number"><input name="number" type="number" required /></label>
+
+        </div>
+        <br>
+        <div>
+          <span class="fecha"><b>Fecha de nacimiento del usuario:</b></span>
+          <br>
+          <!-- type date = Agrega un calendario al formulario -->
+          <label for="date"><input name="date" type="date" /></label>
+
+        </div>
+        <div>
+          <p>
+            <b>Sexo del usuario:</b>
+            <br>
+            <!-- Para que de la opción de elegir una sóla opción, se debe poner el mismo "name" en todos los input -->
+            <label for="masculino"><input id="masculino" name="sexo-usuario" type="radio" value="h" />Hombre</label>
+            <br>
+            <label for="femenino"><input id="femenino" name="sexo-usuario" type="radio" value="m" />Mujer</label>
+            <br>
+            <label for="nodecir"><input id="nodecir" name="sexo-usuario" type="radio" value="n" />Prefiero no
+              decir</label>
+            <!-- radio = sirve para hacer múltiples opciones con círculos -->
+
+            <!--
                         //  OTRA FORMA:
                         <input type="radio" name="sexo-usuario" value="hombre">Hombre<br>
                         <input type="radio" name="sexo-usuario" value="mujer">Mujer<br>
                         <input type="radio" name="sexo-usuario" value="nodecir">Prefiero no decir 
                     -->
-                    </p>
-                </div>
-                <div>
-                    <p>
-                    <label for="pais"><b>País de nacimiento del usuario: </b></label>
-                    <br>
-                    <!-- select = Hace que las opciones sean como menú desplegable -->
-                    <select name="pais">
-                        <option value="arg">Argentina</option>
-                        <option value="bra">Brasil</option>
-                        <option value="chi">Chile</option>
-                        <option value="col">Colombia</option>
-                        <option value="otr">Otro</option>
-                    </select>
-                </p>
-            </div>
-            <div>
-                <!-- button type submit = Crea un botón para enviar una órden -->
-                <button type="submit">Enviar</button>&nbsp;&nbsp;<button type="reset">Borrar</button>
-                <!-- button type reset = Crea un botón para borrar lo cargado -->
-                <!-- &nbsp = Tabulación/espaciado entre elementos -->
-            </div>
-            </form>
+          </p>
         </div>
-    </section>
+        <div>
+          <p>
+            <label for="pais"><b>País de nacimiento del usuario: </b></label>
+            <br>
+            <!-- select = Hace que las opciones sean como menú desplegable -->
+            <select name="pais">
+              <option value="arg">Argentina</option>
+              <option value="bra">Brasil</option>
+              <option value="chi">Chile</option>
+              <option value="col">Colombia</option>
+              <option value="otr">Otro</option>
+            </select>
+          </p>
+        </div>
+        <div>
+          <!-- button type submit = Crea un botón para enviar una órden -->
+          <button type="submit">Enviar</button>&nbsp;&nbsp;<button type="reset">Borrar</button>
+          <!-- button type reset = Crea un botón para borrar lo cargado -->
+          <!-- &nbsp = Tabulación/espaciado entre elementos -->
+        </div>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
