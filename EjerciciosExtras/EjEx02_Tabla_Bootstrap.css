@@ -45,7 +45,7 @@ th[scope=row]{
     content: url(./imagenes/yen.png);
 }
 
-/*nth-child(even) Pinta una fila si y una no / Si quiero una no y una si va nth-child(od)*/
+/*nth-child(even) = Pinta una fila si y una no / nth-child(od) = Lo inverso a nth-child(even) */
 tr:nth-child(even){
     background-color: rgba(255, 255, 0, 0.359);
 }
