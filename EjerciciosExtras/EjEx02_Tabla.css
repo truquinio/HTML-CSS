@@ -1,0 +1,58 @@
+/* Determinar las reglas CSS necesarias para mostrar la siguiente tabla con el aspecto final
+mostrado en la imagen (modificar el código HTML que se considere necesario añadiendo
+los atributos class oportunos).
+
+Pasos a realizar:
+1. Alinear el texto de las celdas, cabeceras y título. Definir los bordes de la tabla, celdas y
+cabeceras (color gris oscuro #333).
+
+64
+2. Formatear las cabeceras de fila y columna con la imagen de fondo correspondiente en
+cada caso (fondo_gris.gif, euro.png, dolar.png, yen.png, libra.png). Modificar el tipo de
+letra de la tabla y utilizar Arial. El color azul claro es #E6F3FF.
+
+3. Mostrar un color alterno en las filas de datos (color amarillo claro #FFFFCC). */
+
+table, th,td{
+    text-align: center;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecera{
+    background-color: #333;
+    background: url(./imagenes/fondo_gris.gif);
+}
+
+th[scope=row]{
+    background-color: #E6F3FF;
+    text-align: left;
+}
+
+#euro{
+    content: url(./imagenes/euro.png);
+}
+
+#dolar{
+    content: url(./imagenes/dolar.png);
+}
+
+#libra{
+    content: url(./imagenes/libra.png);
+}
+
+#yen{
+    content: url(./imagenes/yen.png);
+}
+
+/*nth-child(even) Pinta una fila si y una no / Si quiero una no y una si va nth-child(od)*/
+tr:nth-child(even){
+    background-color: rgba(255, 255, 0, 0.359);
+}
+
+/*
+OTRA FORMA: Para alternar color de las filas
+#amarillo{
+    background-color: rgba(255, 255, 0, 0.359);
+}
+*/
