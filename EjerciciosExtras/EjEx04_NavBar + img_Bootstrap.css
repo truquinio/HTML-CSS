@@ -2,6 +2,11 @@
 Además, le sumaremos una imagen a la landing page usando las clases para la etiqueta
 <img> que nos provee Bootstrap. Ejemplo:
 */
+body {
+  background-image: url(./imagenes/background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 .navbar-brand {
   color: black;
@@ -11,8 +16,3 @@ Además, le sumaremos una imagen a la landing page usando las clases para la eti
   color: black;
 }
 
-body {
-  background-image: url(./imagenes/background.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}

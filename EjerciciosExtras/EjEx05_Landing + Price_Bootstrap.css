@@ -2,12 +2,23 @@
 el nombre, el precio del producto y un botón para comprar y otro para agregar al carrito. A 
 esta página se accederá con el botón en a la tabla de ver detalle. */
 
+/*  NAVBAR  */
+.navbar-brand {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+/*  TARJETA PRINCIPAL  */
 .card-mb-3{
   /*margin = Define los márgenes*/
   margin-top: 10px;
   margin-left: 10px;
 }
 
+/*  TARJETA PRECIO  */
 .col-md-8{
   margin-top: 40px;
   height: 26em;
