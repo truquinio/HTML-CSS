@@ -51,7 +51,9 @@ esta página se accederá con el botón en a la tabla de ver detalle. */
   padding-bottom: 2em;
 }
 
-button{
+/*  .btn.btn.primary = Llama a la clase y al tipo de botón */
+.btn.btn-warning{
+  background-color: rgb(255, 183, 0);
   width:400px;
   height:40px;
 }
