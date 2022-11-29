@@ -8,6 +8,7 @@ body {
   background-size: 100%;
 }
 
+/*  NAVBAR  */
 .navbar-brand {
   color: black;
 }
@@ -16,3 +17,7 @@ body {
   color: black;
 }
 
+#egg{
+  height: 40px;
+  width: 40px;
+}

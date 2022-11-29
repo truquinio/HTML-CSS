@@ -1,0 +1,64 @@
+/* Ahora deberemos hacer una página para el detalle del producto. Una página que muestre 
+el nombre, el precio del producto y un botón para comprar y otro para agregar al carrito. A 
+esta página se accederá con el botón en a la tabla de ver detalle. */
+
+/*  NAVBAR  */
+.navbar-brand {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+#egg{
+  height: 40px;
+  width: 40px;
+}
+
+/*  GRID  */
+.container.text-center{
+  margin-top: 50px;
+}
+
+/*  CARD  */
+.card-body {
+  padding-bottom: 5em;
+  padding-top: 5em;
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+  font-family: 'Arial';
+
+}
+
+.precio{
+  padding-bottom: 0.5em;
+  font-weight: bolder;
+  font-size: 36pt;
+}
+
+.producto-muestra{
+  padding-left: 8em;
+  padding-right: 8em;
+  font-size: 14pt;
+}
+
+.card-text{
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+/*  BOTÓN
+.btn.btn.primary = Llama a la clase y al tipo de botón */
+.btn.btn-primary {
+  background-color: rgb(255, 183, 0);
+  border-color: rgb(255, 183, 0);
+  border-radius: 0%;
+  width: 400px;
+  height: 40px;
+  font-weight: bold;
+  color: black;
+}

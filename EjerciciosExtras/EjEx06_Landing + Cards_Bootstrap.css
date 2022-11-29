@@ -9,6 +9,11 @@
   color: black;
 }
 
+#egg{
+  height: 40px;
+  width: 40px;
+}
+
 /*  TARJETAS / CARTAS  */
 .card{
   text-align: left;
