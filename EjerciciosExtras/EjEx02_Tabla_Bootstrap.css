@@ -15,7 +15,8 @@ letra de la tabla y utilizar Arial. El color azul claro es #E6F3FF.
 
 table, th,td{
     text-align: center;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
+    border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
