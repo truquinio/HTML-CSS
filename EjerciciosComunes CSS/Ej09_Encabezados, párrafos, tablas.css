@@ -3,7 +3,7 @@ que la página resultante tenga el mismo aspecto que el de la siguiente imagen: 
 
 /*PÁRRAFO 1*/
 #titulo{
-    color: rgb(0, 78, 113);
+    color:darkslateblue;
 }
 
 /*first-child = Toma el primero de su tipo*/
@@ -12,7 +12,7 @@ strong:first-child{
 }
 
 span.destacado{
-    color: rgb(255, 187, 0);
+    color: orange;
 }
 
 /*PÁRRAFO 2*/
@@ -20,21 +20,26 @@ span.destacado{
     color: blue;
 }
 
-a{
+a:link{
     color: red;
 }
 
-/*first-child = Toma el primero de su tipo*/
-a:first-child{
+a:visited{
     color: red;
 }
 
-em{
+a:link em{
     color: blue;
 }
 
+a:visited em{
+    color: blue;
+}
+
+/*first-child = Toma el primero de su tipo*/
+
 span.especial{
-    color: rgb(111, 0, 255);
+    color: violet;
 }
 
 /*TABLA*/
@@ -44,38 +49,34 @@ table, th, td {
     border: 1px solid #000;
 }
 
-th.especial{
-    color: rgb(255, 187, 0);
-}
-
 td{
     color: green;
 }
 
-/*last-child = Toma el último de su tipo*/
-strong:last-child{
-    color: rgb(255, 187, 0);;
+th.especial{
+    color: orange;
 }
 
-td.strong{
-    color: rgb(255, 187, 0);
+/*last-child = Toma el último de su tipo*/
+strong:last-child{
+    color: orange;
 }
 
 tfoot{
-    color: rgb(255, 0, 0);
+    color: red;
 }
 
 th{
-    color: rgb(255, 0, 0);
+    color: red;
 }
 
 /*PÁRRAFO 3*/
 #adicional{
-    color: rgb(96, 141, 0);
+    color:chartreuse;
 }
 
 #especial{
-    color: rgb(255, 0, 251);
+    color: violet;
 }
 
 /*last-child = Toma el último de su tipo*/
@@ -84,5 +85,5 @@ a:last-child{
 }
 
 #adicional{
-    color: rgb(110, 122, 0);
+    color:olive;
 }
